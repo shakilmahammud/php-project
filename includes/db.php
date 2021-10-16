@@ -10,5 +10,5 @@ $db_connect = mysqli_connect($servername, $username, $password,$dbname);
 if ($db_connect->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+echo "Get Method  successfully";
 ?>
