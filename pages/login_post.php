@@ -13,8 +13,10 @@ $fetch_assoc=mysqli_fetch_assoc($result);
 $assoc_name=$fetch_assoc['name'];
 $assoc_email=$fetch_assoc['email'];
 if($fetch_assoc['shakil']==1){
-    echo "<h2>$assoc_name</h2> <br/> <h2>$assoc_email</h2>";
-   
+$_SESSION['login_user']=  assoc_name;
+$_SESSION['login_email']=  assoc_email;
+header('location:dashboard.php');
+
 }
 else{
     echo "email or password invalid";

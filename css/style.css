@@ -66,7 +66,8 @@ nav{
     text-align: justify;
     font-size: 20px;
 }
-.form-page .btn{
+.form-page .btn-std{
+  padding: 10px 24px;
     background: indigo;
     color: #fff;
     margin-top: 30px;
@@ -169,7 +170,10 @@ nav{
     margin: 0;
     display: block;
   }
-  
+  button{
+    background: #7579ff !important;
+    cursor: pointer;
+  }
   /*---------------------------------------------*/
   button {
       outline: none !important;
@@ -184,7 +188,7 @@ nav{
   iframe {
       border: none !important;
   }
-  
+
   
   /*//////////////////////////////////////////////////////////////////
   [ Utility ]*/

@@ -20,7 +20,7 @@ if(!isset($_SESSION['login_user'])){
                  <label for="dept">Department</label>
                  <input type="text" name="dept" id="dept" placeholder="Enter Student Department">
              </div>
-             <button type="submit" class="btn">Submit</button>
+             <button type="submit" class="btn-std">Submit</button>
          </form>
      </div>
 

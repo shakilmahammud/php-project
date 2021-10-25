@@ -21,7 +21,7 @@
                     <ul>
                         <li><a href="dashboard.php">Home</a></li>
                         <li><a href="add_student.php">Add Student</a></li>
-                        <li><a href="">All Student</a></li>
+                        <li><a href="all_student.php">All Student</a></li>
                         <li><a href="logout.php">Logout</a></li>
                     </ul>
                 </div>
