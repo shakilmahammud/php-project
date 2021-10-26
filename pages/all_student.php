@@ -29,8 +29,13 @@ table, th, td {
 <table style="width:100%">
   <tr>
     <th scope="col">Name</th>
+    <th scope="col">Father Name</th>
+    <th scope="col">Mother Name</th>
+    <th scope="col">Mobile Number</th>
     <th scope="col">Roll</th>
     <th scope="col">Department</th>
+    <th scope="col">Semester</th>
+    <th scope="col">Session</th>
     <th scope="col">Action</th>
   </tr>
  
@@ -45,8 +50,13 @@ foreach($result_query  as $student){
     ?>
     <tr>
     <td><?=$student['name']?></td>
+    <td><?=$student['father']?></td>
+    <td><?=$student['mother']?></td>
+    <td><?=$student['mobilenumber']?></td>
     <td><?=$student['roll']?></td>
     <td><?=$student['dept']?></td>
+    <td><?=$student['semester']?></td>
+    <td><?=$student['sesionyear']?></td>
     <td>
     <div class="btn-group">
   <a href="edit_student.php?student_id=<?=$student['id']?>" type="button"> <button>Edit</button></a>

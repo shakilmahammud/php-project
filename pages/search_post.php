@@ -13,7 +13,7 @@ require_once('../includes/db.php');
 if(isset($query)){ 
 $searchKey = $query;					
 $sql ="SELECT * FROM students WHERE name LIKE '%$searchKey%'OR roll LIKE '%$searchKey%'
-OR dept Like '%$searchKey%'";
+OR dept Like '%$searchKey%'OR mother Like '%$searchKey%'OR mother Like '%$searchKey%' OR father Like '%$searchKey%' OR mobilenumber Like '%$searchKey%'OR semester Like '%$searchKey%'";
 }
 else {
     $sql ="SELECT * FROM user_registration";
@@ -49,8 +49,13 @@ table, th, td {
 <table style="width:100%">
   <tr>
     <th scope="col">Name</th>
+    <th scope="col">Father Name</th>
+    <th scope="col">Mother Name</th>
+    <th scope="col">Mobile Number</th>
     <th scope="col">Roll</th>
     <th scope="col">Department</th>
+    <th scope="col">Semester</th>
+    <th scope="col">Session</th>
     <th scope="col">Action</th>
   </tr>
 <?php
@@ -59,8 +64,14 @@ while($row=mysqli_fetch_array($result))
 		 ?>
 	<tr>
     <td><?=$row['name']?></td>
-    <td><?= $row['roll']?></td>
+    <td><?=$row['father']?></td>
+    <td><?=$row['mother']?></td>
+    <td><?=$row['mobilenumber']?></td>
+    <td><?=$row['roll']?></td>
     <td><?=$row['dept']?></td>
+    <td><?=$row['semester']?></td>
+    <td><?=$row['sesionyear']?></td>
+
     <td>
     <div class="btn-group">
   <a href="edit_student.php?student_id=<?=$row['id']?>" type="button"> <button>Edit</button></a>
