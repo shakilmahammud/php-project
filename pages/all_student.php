@@ -20,7 +20,11 @@ table, th, td {
 }
 </style>
      <div class="home-page form-page" >
-
+     <form action="search_post.php" method="GET">
+     <h2>Search Student</h2>
+		<input type="text" name="query"  required/>
+		<input type="submit" value="Search" />
+	</form>
 <h2>All Student</h2>
 <table style="width:100%">
   <tr>
